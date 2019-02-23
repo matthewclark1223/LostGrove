@@ -14,3 +14,4 @@ ggplot(data=lgd2,aes(x=Views, y=Sales))+
   scale_x_log10()+
 geom_point()+
 geom_smooth(method=lm)+theme_classic()
+2+2
