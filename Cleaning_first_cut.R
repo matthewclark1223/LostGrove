@@ -24,10 +24,10 @@ AIC(fit)
 #The gamma model appears to be better
 summary(fit)
 plot(Sales~Reached,data=lgd2)
-ggplot(data=lgd2,aes(x=Reached, y=Sales))+
+ggplot(data=lgd2,aes(x=Views, y=Sales))+
   scale_x_log10()+
 geom_point()+
-geom_smooth(method=lm)+theme_classic()
+geom_smooth()+theme_classic()
 summary(fit)
 
 ggplot(data=na.omit(lgd2),aes(x=multi_host,y=Sales))+geom_boxplot()+theme_classic()
